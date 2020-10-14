@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
     <Router>
       <div className="app">
-        <h1>Amazon CLONE</h1>
         <Switch>
           <Route path="/checkout">
             <h1>checkout</h1>
@@ -14,6 +14,7 @@ function App() {
             <h1>login</h1>
           </Route>
           <Route patch="/">
+            <Header />
             <h1>Homme page!</h1>
           </Route>
         </Switch>
